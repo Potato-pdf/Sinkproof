@@ -1,0 +1,21 @@
+[package]
+name = "sinkproof"
+version = "1.0.0"
+edition = "2021"
+authors = ["Your Name"]
+description = "Sinkproof v1 - Custom password hashing system with multi-threading and memory-hard operations"
+
+[dependencies]
+rand = "0.8"
+sha2 = "0.10"
+aes-gcm = "0.10"
+base64 = "0.21"
+hex = "0.4"
+
+[[bin]]
+name = "sinkproof"
+path = "src/main.rs"
+
+[lib]
+name = "sinkproof"
+path = "src/lib.rs"
